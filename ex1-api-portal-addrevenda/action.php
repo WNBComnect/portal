@@ -1,9 +1,7 @@
 <?php
-    session_start();
-
     /*AUTENTICAÇÃO*/
-    $emailAuth = 'desenvcluster@comnect.com.br';
-    $wspassword = '123mudar';
+    $emailAuth = '***';
+    $wspassword = '***';
 
     /*DADOS REVENDA*/
     $razao = $_POST['razao'];
@@ -31,8 +29,6 @@ try{
     print_r($response);
 
     exit; 
-
-    //Array ( [mensagem] => {"idrevenda":793} [retorno] => true )
 
 }catch(Exception $e){
     echo $e->getMessage();
